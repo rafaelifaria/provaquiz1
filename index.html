@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+<head>
+<!-- Cabeçalho do documento, contém metadados e referências a recursos externos -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar uma ampla gama de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a largura da tela e a escala inicial para dispositivos móveis -->
+    <title>Quiz de Ciência, Geografia e Matemática</title>
+    <!-- Define o título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para o arquivo de estilo Bootstrap fornecido por uma URL -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o seu próprio arquivo de estilo CSS -->
+</head>
+<body>
+<!-- Corpo do documento, contém todo o conteúdo visível na página -->
+<div class="container">
+    <h1 class="mt-4 title">Quiz de conhecimentos gerais</h1>
+    <!-- Restante do seu conteúdo HTML -->
+</div>
+
+        <!-- Título principal da página -->
+        <div id="quiz-container" class="mt-4">
+        <!-- Contêiner para o quiz -->
+            <div id="start-container">
+            <!-- Contêiner para a seção inicial do quiz -->
+                <h2>Informe seu nome para começar:</h2>
+                <!-- Título para informar o usuário para inserir seu nome -->
+                <input type="text" id="player-name" class="form-control">
+                <!-- Campo de entrada de texto para o usuário inserir seu nome -->
+                <button id="start-btn" class="btn btn-primary mt-3">Iniciar Quiz</button>
+                <!-- Botão para iniciar o quiz -->
+            </div>
+            <div id="question-container" class="d-none">
+            <!-- Contêiner para as perguntas do quiz (inicialmente oculto) -->
+                <h3 id="question"></h3>
+                <!-- Exibe a pergunta atual -->
+                <div id="image-container">
+                    <img class="imaga" id="question-image" src="" alt="Imagem da Pergunta">
+                </div>
+                <!-- Exibe uma imagem relacionada à pergunta, se houver -->
+                <div id="options"></div>
+                <!-- Exibe as opções de resposta -->
+                <button id="next-btn" class="btn btn-primary mt-3 btn-next">Próxima Pergunta</button>
+                <!-- Botão para avançar para a próxima pergunta -->
+            </div>
+            <div id="result-container" class="d-none">
+            <!-- Contêiner para exibir o resultado do quiz (inicialmente oculto) -->
+                <h2 id="result-message"></h2>
+                <!-- Exibe uma mensagem sobre o resultado do quiz -->
+                <div id="answers"></div>
+                <!-- Exibe as respostas dadas pelo usuário -->
+                <p id="score"></p>
+                <!-- Exibe a pontuação do usuário -->
+                <button id="retry-btn" class="btn btn-primary mt-3">Tentar Novamente</button>
+                <!-- Botão para tentar o quiz novamente -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Inclui o arquivo de script JavaScript -->
+</body>
+</html>

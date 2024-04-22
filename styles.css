@@ -1,0 +1,46 @@
+body {
+    font-family: Arial black, sans-serif; /* Define a família de fontes para o corpo do documento */
+    background-image: url('442c034b-a639-4107-89c5-c3f09c6492e9-question-mark-background-1909040_1280.webp'); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo na tela */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+}
+
+#quiz-container {
+    text-align: center; /* Centraliza o conteúdo do contêiner */
+}
+
+#start-container, #result-container {
+    margin-top: 50px; /* Adiciona margem superior para o contêiner de início e resultado */
+}
+
+#question-container {
+    margin-top: 30px; /* Adiciona margem superior para o contêiner de pergunta */
+}
+
+#options {
+    display: flex; /* Torna o contêiner de opções um contêiner flexível */
+    flex-wrap: wrap; /* Permite que as opções quebrem para a próxima linha conforme necessário */
+    justify-content: center; /* Alinha as opções horizontalmente no centro */
+}
+
+.option-btn {
+    margin: 10px; /* Adiciona margem entre as opções */
+    flex-basis: 45%; /* Define a largura máxima de cada opção para 45% da largura do contêiner */
+    max-width: 300px; /* Define a largura máxima de cada opção */
+}
+
+.btn-next {
+    display: block; /* Torna o botão de próxima pergunta um bloco para ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.title-container {
+    display: flex; /* Torna o contêiner de título um contêiner flexível */
+    justify-content: center; /* Centraliza o título horizontalmente */
+}
+.title {
+    text-align: center; /* Centraliza o texto */
+    color: #3366ff; /* Define a cor do texto */
+    text-shadow: 2px 2px 4px #000000; /* Adiciona um efeito de sombra ao texto */
+}
